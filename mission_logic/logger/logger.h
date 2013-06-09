@@ -51,4 +51,19 @@ class Log {
   void write_msg(std::string message);
 }
 
+/*
+ * This will keep track of all Log instances and make sure messages
+ * are written to the correct log(s).
+ */
+/* 
+class LogManager {
+
+ public:
+  LogManager();
+  ~Log();
+
+  void addLog(std::string name, std::string logname);
+  void write_to_logs(std::string message, std::string name);
+}
+*/
 #endif
